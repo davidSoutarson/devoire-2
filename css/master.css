@@ -1,0 +1,359 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+body {
+	line-height: 1;
+  background-image: url(../img/bkgd_page.jpg);
+  background-size: 100%;
+  background-repeat:no-repeat;
+}
+
+ol, ul{
+  list-style-type: none;
+}
+
+
+/*_________fin du reset css conseiler___modifier_________*/
+
+
+#wrapper{
+  width: 1024px;
+  margin: 0px auto;
+}
+/*debut mise en forme menue*/
+
+.navbar {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+
+ }
+.navbar li{
+  border-top: 2px dashed #fff;
+  border-bottom: 2px dashed #fff;
+  padding: 10px 0px;
+ }
+
+.navbar li:first-child{
+  border-left: 2px dashed #fff;
+ }
+
+.navbar .menue a{
+text-decoration: none;
+color:#fff;
+padding: 10px 10px;
+border-right: 2px dashed #fff;
+
+}
+
+.navbar .menue a:hover{
+  background-color: #fff;
+  color: #00BFFF
+}
+/*__________fin mise en forme menue_____________*/
+
+header{
+  color:#fff;
+  min-height: 280px;
+  height: 525px;
+  text-align: center;
+}
+
+header h1{
+  font-size: 3.8em;
+  font-weight: bold;
+  font-family: Arial, Impact;
+  padding: 5px;
+}
+
+header h2{
+  font-size: 2em;
+  padding: 5px;
+}
+
+header h3{
+  padding: 5px;
+}
+
+.block-slogan {
+position:sticky;
+top: 30%;
+left: 35%;
+}
+/*_____________fin header_______________*/
+
+/* aplicatin font pour section contenaire partie 1 Saut  formulaire */
+section{
+  padding:30px 10px 30px 10px;
+  color: black;
+  background-color:#f6f6f6;
+}
+
+/* mise en page patie 1  en repecten le sans des lectur pages et html */
+.partie{
+  display: flex;
+}
+
+.gauche, .description-milieux, .droite{
+width: 370px;
+height: 273px;
+padding:0px 10px 30px 0px;
+
+}
+
+.description-milieux h2{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.description-milieux strong{
+  color: #38b4b4;
+  font-weight: bold;
+}
+
+.description-milieux em{
+  color: #aaa;
+  font-style: italic;
+}
+
+.description-milieux p{
+  font-family: Arial, sans-serif;
+  line-height: 1.5em;
+  padding: 2px;
+}
+
+.gauche img {
+  border:2px solid black;
+  width: 370px;
+  height: 273px;
+}
+/* mise en page patie 1 */
+/*effet de floue sur image 1er partie */
+figure{
+
+  width: 370px;
+  height: 273px;
+  float: left;
+  position: relative;
+}
+
+figcaption{
+ display: none; /* !!! none au bloc selon efait desirer !!! */
+ width: 374px;
+ height: 277px;
+ /* on ajoute  les bordure H-B D-G 2+2 width: 374px;height: 277px; */
+ position: absolute;
+ top:0;
+ left: 0;
+ bottom: 0;
+ background: rgba(10, 10, 10, 0.6);
+}
+
+figure:hover figcaption{
+  display: block;
+  /* !!! display: block;  pour faire aparaitre le floue au survole des limages*/
+}
+/*effet de floue sur image 1er partie */
+.droite{
+  text-align: center;
+}
+
+.image-de-saut img{
+  border: 2px solid black;
+}
+
+/*________________fin partie 1______________*/
+
+.fig-saut{
+  width: 484px;
+  height: 484px;
+  float: left;
+  position: relative;
+}
+
+ figcaption[calss~="masque"]{
+  /*sagisent du meme element que presedament nous ne modifion que les proeter voulue*/
+  width: 484px;
+  height: 484px;
+  /* on ajoute  les bordure H-B D-G 2+2 width: 484px; height: 484px;  */
+  color:#fff;
+  text-align: center;
+  font-size:24px;
+}
+
+.bouton-tB-fV{
+  margin: 20px;
+  width: 100px;
+  height: 25px;
+  font-size:24px;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #0c7f06;
+  display: inline-block;
+}
+
+.bouton-tB-fV:hover{
+  color: #ccc;
+}
+
+.Pe-texte {
+  font-size: 15px;
+}
+
+.text-hover{
+  height: calc(484px/3) ;
+  padding: calc(484px/3) 0;
+  /*solution peut elégante mais fonctionel
+  :je divise le conteur en trois ligne
+  egale "comme dans un display grid" */
+}
+
+.image-de-saut{
+
+}
+
+
+.saut-livre{
+  margin-top: 40px;
+  display: flex;
+}
+
+.livre{
+ height: 480px;
+ margin-left: 30px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+ .viniette img {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #a22755;
+}
+
+
+.bois, .sable, .rivere, .pierre{
+  width:238px ;
+  height: 238px;
+  border: 2px solid #305a47;
+  text-align: center;
+
+}
+
+/*class COMUNE a partie 1*/
+p[class~="noir"]{
+ color:black;
+}
+
+.image{
+  display: block;
+  text-decoration: none;
+  color: #a22755;
+}
+
+.image:hover{
+  color: #ccc;
+}
+/*__________fin image CLASE COMUNE ____________*/
+
+/*debue formulaire & utilisatin ciblages css avancés*/
+
+.form-01{
+ background-color: #ddeae4;
+  width: 1000px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  border: 2px solid #109177;
+}
+
+legend{
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+fieldset{
+  margin-left: 20%;
+  line-height: 1.5em;
+  padding:10px 0px 10px 0px;
+}
+
+input[value~=non]{
+  width: 80%;
+}
+
+input[value~=prenom]{
+  width: 38%;
+  margin-right: 10px;
+}
+
+input[value~=maile]{
+  width: 40%;
+}
+
+textarea{
+  border: 1px solid black;
+  width: 80%;
+}
+
+input[value~=Envoyer]{
+  width: 65%;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  background-color:#305a47;
+  padding:10px 0px 10px 0px;
+}
+
+input:hover[value~=Envoyer]{
+ color:#ccc;
+ background-color:#109177;
+}
+/*____________fin du formulaire__________*/
+
+.nav-footer{
+  width: 100%;
+  height: 50px;
+  background-color: #305a47;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.nav-footer ul{
+  width: 100%;
+  margin: 0% 30%;/* a voire*/
+}
+
+.nav-footer li{
+  display: inline-block;
+  padding: 10px;
+
+}
+
+.nav-footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-footer a:hover{
+  color: #ccc;
+}
