@@ -5,7 +5,6 @@
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -181,6 +180,40 @@ figure:hover figcaption{
 
 /*________________fin partie 1______________*/
 
+
+
+.image-de-saut{
+  width:480px;
+  height: 480px;
+}
+
+
+.saut-livre{
+  margin-top: 40px;
+  display: flex;
+}
+
+.livre{
+ height: 480px;
+ margin-left: 30px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+ .viniette img {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #a22755;
+}
+
+
+.bois, .sable, .rivere, .pierre{
+  width:238px ;
+  height: 238px;
+  border: 2px solid #305a47;
+  text-align: center;
+}
+
 .fig-saut{
   width: 484px;
   height: 484px;
@@ -213,6 +246,7 @@ figure:hover figcaption{
 .bouton-tB-fV:hover{
   color: #ccc;
 }
+/*_________masque clicable sauter_______*/
 
 .Pe-texte {
   font-size: 15px;
@@ -224,38 +258,6 @@ figure:hover figcaption{
   /*solution peut elégante mais fonctionel
   :je divise le conteur en trois ligne
   egale "comme dans un display grid" */
-}
-
-.image-de-saut{
-
-}
-
-
-.saut-livre{
-  margin-top: 40px;
-  display: flex;
-}
-
-.livre{
- height: 480px;
- margin-left: 30px;
- display: flex;
- flex-wrap: wrap;
-}
-
- .viniette img {
-  margin-top: 20px;
-  text-decoration: none;
-  color: #a22755;
-}
-
-
-.bois, .sable, .rivere, .pierre{
-  width:238px ;
-  height: 238px;
-  border: 2px solid #305a47;
-  text-align: center;
-
 }
 
 /*class COMUNE a partie 1*/
