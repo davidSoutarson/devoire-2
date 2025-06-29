@@ -71,10 +71,5 @@ Ajoutez ici une capture d’écran de la page une fois affichée dans le navigat
 
 ---
 
-## 📬 Contact
 
-Pour toute question, vous pouvez me contacter via le formulaire en bas de page du projet.  
-(Section **Contact** dans le pied de page.)
-
----
 
